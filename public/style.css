@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-box {
+  width: 60%;
+  height: 70%;
+  border: 2px solid red;
+  padding: 1em;
+  display: grid;
+  grid-template-rows: 20% 70% 10%;
+}
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding-bottom: 2px;
+}
+@media screen and (max-width:500px) {
+  img{
+     display: none;
+  }
+}
+img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+h1 {
+  color: blueviolet;
+}
+.chat-section {
+
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.message {
+  padding: 10px;
+  max-width: 45%;
+  height: auto;
+}
+.incoming {
+  text-align: left;
+  margin-right: auto;
+}
+.incoming > p {
+  background-color: beige;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+h4 {
+  margin-bottom: 4px;
+}
+p {
+  text-align: justify;
+}
+.outgoing {
+  margin-left: auto;
+}
+.outgoing > p {
+  background-color: #ff666f;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-align: right;
+}
+.outgoing > h4 {
+  text-align: right;
+}
+#message-field {
+
+  height: 100%;
+  font-size: 1.2rem;
+  width: 40vw;
+}
+.input-box{
+ 
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#btn {
+
+  height: 50px;
+  padding: 5px 10px;
+  background-color: #c5bce6;
+}
+#btn:hover {
+  cursor: pointer;
+  background-color: azure;
+}
